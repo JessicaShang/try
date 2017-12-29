@@ -1,0 +1,112 @@
+/*
+* @Author: andy
+* @Date:   2017-12-18 09:36:01
+* @Last Modified by:   andy
+* @Last Modified time: 2017-12-18 09:36:01
+*/
+body {
+	background-color: #f3f5f7;
+
+}
+header {
+	width: 1300px;
+	height: 100px;
+	/* background-color: pink; */
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.logo {
+	width: 195px;
+	height: 42px;
+	/* background-color: purple; */
+	float: left;
+}
+.logo a {
+  display: block;
+  width: 195px;
+  height: 42px;
+  background: url(../images/logo.png) no-repeat;
+  text-indent: -990px;/*   隐藏链接里面的文字 */
+  overflow: hidden;  /* 这句话加上想必也是极好的 */
+}
+nav {
+	float: left;
+	margin-left: 20px;
+}
+nav li {
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 25px;
+}
+nav li a {
+	display: block;
+	height: 40px;
+	font-size: 18px;
+	padding: 0 10px;
+}
+nav li a:hover {
+	border-bottom: 2px solid #00a4ff;
+}
+.search {
+	width: 410px;
+	height: 40px;
+	background-color: purple;
+	float: left;
+	margin-left: 160px;
+}
+.search input {
+	width: 361px;
+	height: 40px;
+	border: 1px solid #00a4ff;
+	outline: none;  /* 轮廓线 */
+	padding-left: 10px;
+	float: left;
+}
+.search button {
+	width: 49px;
+	height: 40px;
+	border: 0;
+	outline: none;
+	float: left;
+	background: url(../images/fa-search.png) no-repeat;
+}
+.personal {
+	float: right;
+	height: 40px;
+	line-height: 40px;
+}
+.personal dt, .personal dd {
+	float: left;
+}
+.personal s {
+	position: relative;
+	/* padding: 20px; */
+	padding: 0 20px;
+	text-decoration: none;
+}
+.personal s::before {
+	content: "";
+	display: block;  /* 因为伪元素默认的是行内元素 */
+	width: 6px;
+	height: 6px;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	right: 15px;
+	top: 0;
+}
+.personal span img {
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+/* banner部分 */
+.banner {
+	height: 420px;
+	background-color: #1c036c;
+}
+.inner {
+	height: 420px;
+	background: url(../images/banner.jpg) no-repeat top center;
+}
